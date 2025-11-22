@@ -450,3 +450,61 @@ img {
 .icon:hover {
     background: #31D0AA;
     /* цвет при наведении */ }
+
+    /* модальное окно */
+.madal-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    opacity: 1;
+    pointer-events:none;
+}
+
+.modal-overlay.is-open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal {
+    background-color: #FCFCFC;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0,2);
+    max-width: 584px;
+    max-height: 408px;
+    overflow-y: auto;
+
+}
+.modal-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #E7E9FC;
+    transition: background 0.3s;
+    margin-left: 470px;
+    margin-bottom: 24px;
+}
+.icon-cross {
+    width: 24px;
+    width: 24px;
+    fill: #2E2F42;
+}
+
+.modal-h {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
