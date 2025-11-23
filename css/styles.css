@@ -480,7 +480,7 @@ img {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0,2);
     max-width: 408px;
-    max-height: 584px;
+    max-height: 640px;
     overflow-y: auto;
 
 }
@@ -495,6 +495,8 @@ img {
     transition: background 0.3s;
     margin-left: 320px;
     margin-bottom: 24px;
+    margin-top: 24px;
+    padding-top: 0;
 }
 .icon-cross {
     width: 8px;
@@ -506,14 +508,19 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
 }
 .text-modal {
     font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 2%;
+    align-items: center;
 }
 
 .input-wraper {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .input-wraper label {
@@ -581,6 +588,26 @@ textarea {
     font-weight: 500;
     font-size: 16px;
     color: #FFFFFF;
+}
+
+.input-holder:hover input {
+    border-color: #4a74ff;
+ }
+.input-holder:hover .input-icone {
+     fill: #4a74ff; 
+}
+
+.input-holder input:focus {
+border-color: #4a74ff;
+box-shadow: 0 0 0 3px rgba(74, 116, 255, 0.25);
+outline: none;
+}
 
 
+.comment-form:hover {
+    border-color: #4a74ff;
+}
+
+.comment-form:hover::placeholder {
+    color: #4a74ff;
 }
