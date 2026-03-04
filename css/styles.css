@@ -66,7 +66,7 @@ flex-direction: column;
     text-decoration: none;
     margin-right: 76px;
 }
-.weblogo_add {
+.weblogo-add {
     color: #2e2f42;
 }
 
@@ -503,7 +503,8 @@ img {
     background-color: #4D5AE5;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-foot:hover {
+.icon-foot:hover,
+.icon-foot:focus {
     background-color: #31d0aa;
 }
 
@@ -582,7 +583,8 @@ img {
     letter-spacing: 0.04em;
 }
 
-.button-foot:hover {
+.button-foot:hover,
+.button-foot:focus {
     background-color: #404bbf;
 }
 
@@ -607,8 +609,7 @@ img {
     
     opacity: 0;
     visibility: hidden;
-     pointer-events: none;
-    
+    pointer-events: none;
 }
 
 .modal-overlay.is-open{
@@ -717,7 +718,7 @@ img {
     flex-direction: column;
     width: 100%;
     font-size: 12px;
-    line-height: 1.33;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     font-weight: 400;
     color: #8E8F99;
@@ -773,7 +774,7 @@ img {
 /* SVG слева */
 .input-svg {
     position: absolute;
-    left: 8px;
+    left: 16px;
     top: 50%;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -788,7 +789,7 @@ img {
 .input-folder::after {
     content: "";
     position: absolute;
-    left: 32px;
+    left: 42px;
     /* чуть правее svg */
     top: 50%;
     transform: translateY(-50%);
@@ -799,12 +800,8 @@ img {
 
 /* Отступ текста */
 .input {
-    padding-left: 45px; }
+    padding-left: 51px; }
 
-.checkbox-label {
-    color: #8E8F99;
-    font-size: 12px;
-}
 .checkbox-first {
     accent-color: #404BBF;
 }
@@ -833,7 +830,8 @@ img {
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.end-form-button:hover {
+.end-form-button:hover,
+.end-form-button:focus {
     background-color: #404BBF;
 }
 
@@ -851,7 +849,7 @@ img {
 .button-foot:hover {
     background-color:#31D0AA;
 }
-.Policy {
+.policy {
     text-decoration: underline;
     color: #4d5ae5;
 }
@@ -860,5 +858,20 @@ img {
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.04em;
+}
+.custom-checbox {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 16px;
+    width: 16px;
+    border: 1px solid #2E2F4266;
+    border-radius: 2px;
+    fill: transparent;
+}
+.checkbox-first:checked + .checkbox-label > .custom-checbox {
+    background-color: #404BBF;
+    fill: #F4F4FD;
+    border: none;
 }
 

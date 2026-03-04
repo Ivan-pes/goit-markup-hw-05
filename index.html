@@ -21,7 +21,7 @@
     <header class="header">
         <div class="container">
         <nav class="nav">
-            <a class="weblogo" href="./index.html">WEB<span class="weblogo_add">STUDIO</span></a>
+            <a class="weblogo" href="./index.html">WEB<span class="weblogo-add">STUDIO</span></a>
             <ul class="first-listi">
                 <li class="nav-list">
                     <a class="firs-links current"  href="./index.html">Studio
@@ -508,8 +508,15 @@
         </div>
 
         <div class="for-checbox">
-        <input type="checkbox" name="checkbox" id="checkbox" class="checkbox-first">
-        <label class="checkbox-label" for="checkbox">I accept the terms and conditions of the <a href="*" class="Policy">Privacy Policy</a>
+        <input type="checkbox" name="checkbox" id="checkbox" class="checkbox-first visually-hidden">
+        <label class="checkbox-label" for="checkbox">
+            <span class="custom-checbox">
+                <svg class="custom-checbox-icone" width="10" height="8">
+                    <use href="./images/icons.svg#icon-checkmark"></use>
+                </svg>
+            </span>
+            I accept the terms and conditions of the 
+            <a href="*" class="policy">Privacy Policy</a>
         </label>
         </div>
         <div class="for-bottun-mod">
